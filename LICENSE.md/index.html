@@ -1,0 +1,237 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+
+<title>Webdesigns</title>
+<style>
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+.menu{
+	width: 100%;
+	height: 50px;
+	background-color: #222;
+	font-family: 'Arial';
+}
+
+.menu ul{
+
+	list-style: none;
+	position: relative;
+}
+
+.menu ul li{
+	width: 150px;
+	float: left;
+}
+
+.menu a{
+	padding: 15px;
+	display: block;
+	text-decoration: none;
+	text-align: center;
+	background-color: #222;
+	color: #fff;
+}
+
+.menu ul ul{
+	position: absolute;
+	visibility: hidden;
+}
+
+.menu ul li:hover ul{
+	visibility: visible;
+}
+
+.menu a:hover{
+	background-color: rgb(29, 41, 31);
+	color: #555;
+}
+
+.menu ul ul li{
+	float: none;
+	border-bottom: solid 1px rgb(124, 124, 120);
+}
+
+.menu ul ul li{
+	float: none;
+	border-bottom: solid 1px rgb(237, 253, 16);
+}
+
+.menu ul ul li a{
+	background-color: rgb(250, 191, 27);
+}
+
+label [for="bt_menu"]{
+	padding: 5px;
+	background-color: #222;
+	color: #fff;
+	font-family: "Arial";
+	text-align: center;
+	font-size: 30px;
+	cursor: pointer;
+	width: 50px;
+	height: 50px;
+}
+
+
+#bt_menu{
+display: none;
+}
+
+label[for="bt_menu"]{
+	display: none;
+}
+
+@media(max-width: 800px){
+label[for="bt_menu"]{
+	display: block;
+}
+
+#bt_menu:checked ~ .menu{
+	margin-left: 0;
+}
+
+.menu{
+	margin-top: 5px;
+	margin-left: -100%;
+	transition: all .4s;
+}
+
+.menu ul li{
+	width: 100%;
+	float: none;
+}
+
+.menu ul ul{
+	position: static;
+	overflow: hidden;
+	max-height: 0;
+	transition: all .4s;
+}
+
+.menu ul li:hover ul{
+	height: auto;
+max-height: 200px;
+}
+}
+
+div#top {
+position: fixed-top;
+top: 0px;
+left:0px;
+	}
+
+div#campo {
+
+text-shadow: -0.06em 0 red, 0.06em 0 cyan;
+position:unset;
+top: 10px;
+left: 10px;
+background-color: rgba(82,96,117,0.5);
+background-image: url("mudas.jpg")
+font-style: bold;
+font-family: Arial, Helvetica, sans-serif;
+font-size: xx-large;
+
+}
+
+
+	
+</style>
+
+
+
+
+<body>
+
+<div id="top">
+
+<input type="checkbox" id="bt_menu">
+<label for="bt_menu"><h1>&#9776;</h1></label>
+
+
+	<nav class="menu">
+		<ul>
+			<li><a href="#">Home</a></li>
+			<li><a href="#">Designs</a>
+				<ul>
+					<li><a href="#">Logos</a></li>
+					<li><a href="#">Posters</a></li>
+					<li><a href="#">WebDesigns</a></li>
+
+				</ul>
+			</li>
+			<li><a href="#">Consultoria</a>
+				<ul>
+					<li><a href="#">Registro de domínios</a></li>
+					<li><a href="#">E-comerce</a></li>
+
+				</ul>
+			</li>
+			<li><a href="#">Contato</a>
+				<ul>
+					<li><a href="#">Trabalhe conosco</a></li>
+					<li><a href="#">Contrate nossos Serviços</a></li>
+				</ul>
+			</li>
+
+
+
+
+		</ul>
+
+
+	</nav>
+
+</div>
+
+<div id="campo">
+
+
+	
+		<h1>WEBDESIGN EXPERIENCE</h1> Em construção jan/2020
+FrontFoods Market<p>
+frontfoods.market@gmail.com<p>
+Rafael Schüler de Carvalho <p>
+		rovided ATG commerce expertise in the development and implementation of the site.
+		Provided ATG content administration expertise in the development and implementation of the site.
+		Provided ATG expertise around scenarios and promotions.
+		Integrated with Accretive Commerce for order management & fulfillment
+		Integrated POS with eCommerce system for warehousing, fulfillment and order management
+		Build a sophisticated CSR solution which eventually became ATG’s CSC product.rovided ATG commerce expertise in the development and implementation of the site.
+		Provided ATG content administration expertise in the development and implementation of the site.
+		Provided ATG expertise around scenarios and promotions.
+		Integrated with Accretive Commerce for order management & fulfillment
+		Integrated POS with eCommerce system for warehousing, fulfillment and order management
+		Build a sophisticated CSR solution which eventually became ATG’s CSC product.rovided ATG commerce expertise in the development and implementation of the site.
+		Provided ATG content administration expertise in the development and implementation of the site.
+		Provided ATG expertise around scenarios and promotions.
+		Integrated with Accretive Commerce for order management & fulfillment
+		Integrated POS with eCommerce system for warehousing, fulfillment and order management
+		Build a sophisticated CSR solution which eventually became ATG’s CSC product.rovided ATG commerce expertise in the development and implementation of the site.
+		Provided ATG content administration expertise in the development and implementation of the site.
+		Provided ATG expertise around scenarios and promotions.
+		Integrated with Accretive Commerce for order management & fulfillment
+		Integrated POS with eCommerce system for warehousing, fulfillment and order management
+		Build a sophisticated CSR solution which eventually became ATG’s CSC product.
+		<img src="mudas.jpg">
+		<img src="mudas.jpg">
+		<img src="mudas.jpg">
+		<img src="mudas.jpg">
+		<img src="mudas.jpg">
+
+
+
+	</div>
+
+
+
+</body>
+
+</html>
