@@ -9,6 +9,18 @@
 <title>FrontFoods</title>
 <style>
 
+@media screen and (max-width: 1200px) {
+				.box{
+						width: 40%;
+					}
+					}
+
+					@media screen and (max-width: 600px) {
+				.box{
+						width: 90%;
+					}
+					}
+
 *{
 	margin: 0;
 	padding: 0;
@@ -143,6 +155,32 @@ font-size: xx-large;
 
 }
 
+div#container  {
+
+	width: 100%;
+	height: auto;
+	background: #EEE8AA;
+
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	flex-flow: wrap;
+
+}
+
+div#box {
+
+	width: 100%;
+	height: auto;
+	background: #ADFF2F;
+	margin: 20px;
+	box-sizing: border-box;
+	font-size: 20px;
+
+}
+
+
+
 div#rodape {
 
 position:unset;
@@ -155,7 +193,7 @@ font-family: Arial, Helvetica, sans-serif;
 font-size: medium;
 
 }
-	
+
 </style>
 
 
@@ -206,17 +244,30 @@ font-size: medium;
 </div>
 
 	<div id="campo">
-
-
-		 <iframe name="campo" height="auto" width="100%" src="campo.html" allowfullscreen></iframe> <p>
-
+Front Foods Market Company
 	</div>
+
+
+	 <div id="container"> 
+
+         	<div id="box">Front Foods is a vendor of Pereskia aculeata (Miller).<p>
+         		Pereskia aculeata Miller is a native cactus that can be found in Brazil and is called ‘ora-pro-nobis’ (OPN).
+         	</div>
+         	<div id="box">
+         		OPN leaves showed remarkable levels of total dietary fiber (39.1% dry basis), minerals (calcium, magnesium, manganese and zinc) and vitamins (vitamin A, vitamin C and folic acid).
+         	</div>
+         	<div id="box">
+         		Among amino acids, tryptophan was the most abundant (20.5% of the total amino acids) and sodium dodecyl sulfate-polyacrylamide gel electrophoresis showed small peptides, inferior to 6.5 kDa, and four major bands (61 kDa, 53 kDa, 33 kDa, and 15 kDa).
+         	</div>
+
+      </div>
+
 
 	<hr>
 
              <div id="rodape">
 
-			Copyright 2020 Frontfoods Market 
+			Frontfoods Market - Copyright 2017 - 2020 Rafael Schüler de Carvalho All Rights Reserved
            
              </div>
 
