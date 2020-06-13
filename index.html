@@ -4,7 +4,19 @@
 	<meta author="Rafael Schüler de Carvalho 2017">
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1.0">
-
+	
+	
+	
+	<style>
+#videoElement {
+	width: 400px;
+	height: 275px;
+	background-color: #666;
+}
+</style>
+	
+	
+	
 
 <title>FrontFoods</title>
 
@@ -295,6 +307,24 @@ Pereskia aculeata, Front Foods!
 			 Copyright - Rafael Schüler de Carvalho - All Rights Reserved
            
              </div>
+	
+	<video autoplay="true" id="videoElement">
+</video>
+	
+	<script>
+var video = document.querySelector("#videoElement");
+
+
+if (navigator.mediaDevices.getUserMedia) {       
+	navigator.mediaDevices.getUserMedia({video: true})
+  .then(function(stream) {
+    video.srcObject = stream;
+  })
+  .catch(function(err0r) {
+    console.log("Something went wrong!");
+  });
+}
+</script>
 
 
            
