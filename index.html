@@ -7,33 +7,12 @@
 	
 	
 	
-	<style>
-#videoElement {
-	width: 400px;
-	height: 275px;
-	background-color: #666;
-}
-</style>
-	
 	
 	
 
 <title>FrontFoods</title>
 
 <style>
-
-					@media screen and (max-width: 1200px) {
-				.box{
-						width: 40%;
-					}
-					}
-
-					@media screen and (max-width: 600px) {
-				.box{
-						width: 90%;
-					}
-					}
-
 
 *{
 	margin: 0;
@@ -308,23 +287,7 @@ Pereskia aculeata, Front Foods!
            
              </div>
 	
-	<video autoplay="true" id="videoElement">
-</video>
 	
-	<script>
-var video = document.querySelector("#videoElement");
-
-
-if (navigator.mediaDevices.getUserMedia) {       
-	navigator.mediaDevices.getUserMedia({video: true})
-  .then(function(stream) {
-    video.srcObject = stream;
-  })
-  .catch(function(err0r) {
-    console.log("Something went wrong!");
-  });
-}
-</script>
 
 
            
